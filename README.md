@@ -9,4 +9,5 @@ How to get the cheapest air tickets ?
 Data Set: https://www.kaggle.com/datasets/yashdharme36/airfare-ml-predicting-flight-fares
 https://www.kaggle.com/datasets/nikhilmittal/flight-fare-prediction-mh?resource=download&select=Data_Train.xlsx
 [REFER] https://medium.com/mlearning-ai/flight-fare-predictions-b1150fdc45a3
+https://www.kaggle.com/code/pratul007/airfare-ml-predicting-flight-fares/notebook
 Sample project : https://github.com/ardnep/ntu-sc1015-mini-project
