@@ -48,17 +48,21 @@ This aids us in finding out if there is a inverse or positive correlation, if an
 
 - Countries with the Highest Economic Wellbeing
 <br>Dropped countries with GDP per capita < 50000 and HDI < 0.85. Doing so would result in only the top 15 countries out of the 75 with the highest economic wellbeing.
+<br>['Australia', 'Austria', 'Belgium', 'Denmark', 'Finland', 'Germany', 'Iceland', 'Ireland', 'Luxembourg', 'Netherlands', 'Norway', 'Qatar', 'Singapore', 'Sweden', 'Switzerland', 'United States']
 
 - Countries with Lowest Economic Wellbeing
 <br>Dropped countries with GDP per capita > 32000 and HDI > 0.70. Doing so would result in only the top 15 countries out of the 75 with the lowest economic wellbeing.
+<br>['Belize', 'Colombia', 'Ecuador', 'El Salvador', 'Guatemala', 'Kyrgyzstan', 'Nicaragua', 'Paraguay', 'Saint Lucia', 'Saint Vincent and Grenadines', 'South Africa', 'Suriname', 'Thailand', 'Turkmenistan', 'Uzbekistan']
 
 #### Find the Country Suicide Rate
 
 - Countries with the lowest suicide rate
 <br>Dropped countries with Suicide/100k pop > 60. Doing so would result in only the top 15 countries out of the 75 with the lowest suicide rate.
+<br>['Antigua and Barbuda', 'Armenia', 'Bahrain', 'Cyprus', 'Greece', 'Grenada', 'Guatemala', 'Kuwait', 'Oman', 'Panama', 'Qatar', 'Seychelles', 'South Africa', 'Turkey', 'Turkmenistan']
 
 - Countries with the highest suicide rate
 <br>Dropped countries with Suicide/100k pop < 210. Doing so would result in only the top 15 countries out of the 75 with the highest suicide rate.
+<br>['Belarus', 'Croatia', 'Estonia', 'Hungary', 'Japan', 'Kazakhstan', 'Latvia', 'Lithuania', 'Serbia', 'Slovenia', 'Suriname', 'Ukraine', 'Uruguay']
 
 #### ECONOMIC WELLBEING VS SUICIDE
 Compare the Economic Wellbeing and the Suicide Rate
@@ -91,7 +95,7 @@ We investigated the Suicide Counts for each of the 5 countries above (Qatar, Sur
 #### Linear Regression of Suicides throughout the years in Singapore
 As we wanted to only look at the Country Singapore as we are from Singapore, we created a new dataframe called Singapore. 
 
-<br>Singapore = suicideData[[
+Singapore = suicideData[[
     'country',
     'year',
     'sex',
@@ -99,11 +103,11 @@ As we wanted to only look at the Country Singapore as we are from Singapore, we 
     'suicides/100k pop',
 ]]
 
-<br>We then only included Singapore's data
+We then only included Singapore's data
 
 Singapore  = Singapore[(Singapore['country'] == "Singapore" )]
 
-<br>We also combined Singapore data based on year
+We also combined Singapore data based on year
 
 SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
 
@@ -116,12 +120,14 @@ SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
 #### Linear Regression of Suicides throughout the years in Singapore
 
 - Actual vs Predicted Suicide Rates (Train Data)
+
 <br>Goodness of Fit of Model 	Train Dataset
 <br>Explained Variance (R^2) 	: 0.8129937560527714
 <br>Mean Squared Error (MSE) 	: 6.210716587845216
 <br>Root Mean Squared Error (RMSE) 	: 2.492130933126351
 
 - Actual vs Predicted Suicide Rates (Test Data)
+
 <br>Goodness of Fit of Model 	Test Dataset
 <br>Explained Variance (R^2) 	: 0.8279740117603024
 <br>Mean Squared Error (MSE) 	: 6.930591439963626
@@ -136,6 +142,8 @@ Overall decreasing trend in Suicide rates in Singapore up till the year 2016
 #### New Method: Logistic Regression of Data
 
 Purpose: To analyze and model the relationship between various factors and gender in the context of suicide rates, and to understand how well a logistic regression model can predict gender based on these factors.
+
+Accuracy: 77.05%
 
 ## 05: Data driven insights & recommendations
 
