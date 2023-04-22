@@ -6,7 +6,7 @@ We believe that this dataset as well as question is relevant to our society toda
 
 Hence, we found the dataset: **Suicide_Rates_Overview** which compiles data on countries' economic wellbeing and their suicide rates. From this, we hope to acheive a better understanding on whether our quest for a high economic wellbeing will affect the suicide rates.
 
-Dataset link: ttps://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016/input
+### Dataset link: ttps://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016/input
 
 Question: 
 **How does a country's economic well being affect suicide rates among different demographic categories?**
