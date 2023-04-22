@@ -1,8 +1,8 @@
 # SC1015 Miniproject: B137_team 5
 ### Team Members
-    Jasmine Goh
-    Lau Fan Yu 
-    Michael Ho
+<br>Jasmine Goh
+<br>Lau Fan Yu 
+<br>Michael Ho
 
 ## 01: Motivation/Rationale
 
@@ -124,14 +124,12 @@ SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
 #### Linear Regression of Suicides throughout the years in Singapore
 
 - Actual vs Predicted Suicide Rates (Train Data)
-
 <br>Goodness of Fit of Model 	Train Dataset
 <br>Explained Variance (R^2) 	: 0.8129937560527714
 <br>Mean Squared Error (MSE) 	: 6.210716587845216
 <br>Root Mean Squared Error (RMSE) 	: 2.492130933126351
 
 - Actual vs Predicted Suicide Rates (Test Data)
-
 <br>Goodness of Fit of Model 	Test Dataset
 <br>Explained Variance (R^2) 	: 0.8279740117603024
 <br>Mean Squared Error (MSE) 	: 6.930591439963626
