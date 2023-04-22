@@ -1,6 +1,6 @@
 # SC1015 Miniproject: B137_team 5
 ### Team Members
-<br>Jasmine Goh
+Jasmine Goh
 <br>Lau Fan Yu 
 <br>Michael Ho
 
