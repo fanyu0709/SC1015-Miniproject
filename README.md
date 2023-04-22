@@ -8,8 +8,7 @@ Hence, we found the dataset: **Suicide_Rates_Overview** which compiles data on c
 
 Dataset link: ttps://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016/input
 
-Question: 
-### How does a country's economic well being affect suicide rates among different demographic categories?
+Question: **How does a country's economic well being affect suicide rates among different demographic categories?**
 
 ## 02: Data Preperation and Cleaning
 
