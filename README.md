@@ -12,7 +12,7 @@ Question:
 
 ## 02: Data Preperation and Cleaning
 
-1. import dataset and put relevant variable in DataFrame (sData)
+#### 1. import dataset and put relevant variable in DataFrame (sData)
 
 sData = suicideData[[
     'country',
@@ -32,7 +32,7 @@ Human Development Index (HDI) : Measures a country's level of social and economi
 
 To have a more accurate basis of comparison of the suicide rates between countries, we shall use Suicides/100k pop instead of Suicides_no as each country has a different population. (E.g. A high suicide number is not indicative of a high suicide rate if a country has a high population.)
 
-2. Drop data that are not in the year 2014 and without HDI in the year 2014
+#### 2. Drop data that are not in the year 2014 and without HDI in the year 2014
 
 As countries calculate their HDIs at different time periods, we filtered out the year where it coincides for most countries. Hence, we chose 2014 as the most recent year that most countries calculated their HDI.
 
@@ -44,37 +44,36 @@ Since we do not know the relationship between a country's economic wellbeing and
 
 This aids us in finding out if there is a inverse or positive correlation, if any, between a country's economic wellbeing and its suicide rate per 100k population.
 
-### Find the Country Economic Wellbeing: GDP & HDI
+#### Find the Country Economic Wellbeing: GDP & HDI
 
 - **Countries with the Highest Economic Wellbeing**
-Dropped countries with GDP per capita < 50000 and HDI < 0.85. Doing so would result in only the top 15 countries out of the 75 with the highest economic wellbeing.
+<br>Dropped countries with GDP per capita < 50000 and HDI < 0.85. Doing so would result in only the top 15 countries out of the 75 with the highest economic wellbeing.
 
 - **Countries with Lowest Economic Wellbeing**
-Dropped countries with GDP per capita > 32000 and HDI > 0.70. Doing so would result in only the top 15 countries out of the 75 with the lowest economic wellbeing.
+<br>Dropped countries with GDP per capita > 32000 and HDI > 0.70. Doing so would result in only the top 15 countries out of the 75 with the lowest economic wellbeing.
 
-### Find the Country Suicide Rate
+#### Find the Country Suicide Rate
 
 - **Countries with the lowest suicide rate**
-Dropped countries with Suicide/100k pop > 60. Doing so would result in only the top 15 countries out of the 75 with the lowest suicide rate.
+<br>Dropped countries with Suicide/100k pop > 60. Doing so would result in only the top 15 countries out of the 75 with the lowest suicide rate.
 
 - **Countries with the highest suicide rate**
-Dropped countries with Suicide/100k pop < 210. Doing so would result in only the top 15 countries out of the 75 with the highest suicide rate.
+<br>Dropped countries with Suicide/100k pop < 210. Doing so would result in only the top 15 countries out of the 75 with the highest suicide rate.
 
-### ECONOMIC WELLBEING VS SUICIDE
+#### ECONOMIC WELLBEING VS SUICIDE
 Compare the Economic Wellbeing and the Suicide Rate
 
 Countries with the highest economic wellbeing and lowest suicide rate
-['Qatar']
+<br>['Qatar']
 
 Countries with the highest economic wellbeing and highest suicide rate
-[] (NONE)
+<br>[] (NONE)
 
 Countries with the lowest economic wellbeing and highest suicide rate
-['Suriname']
+<br>['Suriname']
 
 Countries with the lowest economic wellbeing and lowest suicide rate
-['Guatemala', 'South Africa', 'Turkmenistan']
-
+<br>['Guatemala', 'South Africa', 'Turkmenistan']
 
 ## 04: Use of machine learning techniques to solve specific problem
 
