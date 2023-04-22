@@ -1,6 +1,8 @@
 # SC1015 Miniproject: B137_team 5
 ### Team Members
-**Jasmine Goh, Lau Fan Yu Michael Ho**
+    Jasmine Goh
+    Lau Fan Yu 
+    Michael Ho
 
 ## 01: Motivation/Rationale
 
