@@ -1,4 +1,8 @@
-# SC1015 Miniproject: B137_team 5
+# SC1015 Miniproject: 
+
+#### B137_team 5
+#### Team Members
+** Jasmine Goh, Lau Fan Yu Michael Ho**
 
 ## 01: Motivation/Rationale
 
@@ -12,7 +16,7 @@ Question: **How does a country's economic well being affect suicide rates among 
 
 ## 02: Data Preperation and Cleaning
 
-#### 1. import dataset and put relevant variable in DataFrame (sData)
+#### 1. Import dataset and put relevant variable in DataFrame (sData)
 
 sData = suicideData[[
     'country',
