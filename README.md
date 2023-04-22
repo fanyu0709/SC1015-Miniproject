@@ -26,9 +26,9 @@ sData = suicideData[[
 
 To determine a country's economic wellbeing, we need the variables (GDP & HDI). Hence, we chose HDI per year. For GDP, we chose GDP per capita instead of GDP per year as each country's population is different. GDP Per Capita makes it relatively easier to compare across countries and to adjust for different levels of purchasing power from one country to the next.
 
-Gross Domestic Product (GDP) per capita : Measures the economic output of a nation per person to determine the standard of living and quality of life of a population.
+**Gross Domestic Product (GDP) per capita :** Measures the economic output of a nation per person to determine the standard of living and quality of life of a population.
 
-Human Development Index (HDI) : Measures a country's level of social and economic development that comprises of mean years of schooling, expected years of schooling, life expectancy at birth, and gross national income per capita.
+**Human Development Index (HDI) :** Measures a country's level of social and economic development that comprises of mean years of schooling, expected years of schooling, life expectancy at birth, and gross national income per capita.
 
 To have a more accurate basis of comparison of the suicide rates between countries, we shall use Suicides/100k pop instead of Suicides_no as each country has a different population. (E.g. A high suicide number is not indicative of a high suicide rate if a country has a high population.)
 
@@ -100,10 +100,12 @@ As we wanted to only look at the Country Singapore as we are from Singapore, we 
 ]]
 
 <br>We then only included Singapore's data
-<br>Singapore  = Singapore[(Singapore['country'] == "Singapore" )]
+
+Singapore  = Singapore[(Singapore['country'] == "Singapore" )]
 
 <br>We also combined Singapore data based on year
-<br> SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
+
+SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
 
 <br>We split the dataset into Train(80%) and Test(20%) data
 <br>Train Set : (24, 1) (24, 1)
