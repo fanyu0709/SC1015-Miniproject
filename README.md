@@ -28,13 +28,13 @@ sData = suicideData[[
     'gdp_per_capita ($)'
 ]]
 
-To determine a country's economic wellbeing, we need the variables (GDP & HDI). Hence, we chose HDI per year. For GDP, we chose GDP per capita instead of GDP per year as each country's population is different. GDP Per Capita makes it relatively easier to compare across countries and to adjust for different levels of purchasing power from one country to the next.
+To determine a country's economic wellbeing, we need the variables (GDP & HDI). Hence, we chose **HDI per year**. For GDP, we chose **GDP per capita** instead of GDP per year as each country's population is different. GDP Per Capita makes it relatively easier to compare across countries and to adjust for different levels of purchasing power from one country to the next.
 
 **Gross Domestic Product (GDP) per capita :** Measures the economic output of a nation per person to determine the standard of living and quality of life of a population.
 
 **Human Development Index (HDI) :** Measures a country's level of social and economic development that comprises of mean years of schooling, expected years of schooling, life expectancy at birth, and gross national income per capita.
 
-To have a more accurate basis of comparison of the suicide rates between countries, we shall use Suicides/100k pop instead of Suicides_no as each country has a different population. (E.g. A high suicide number is not indicative of a high suicide rate if a country has a high population.)
+To have a more accurate basis of comparison of the **suicide rates between countries**, we shall use **Suicides/100k pop** instead of **Suicides_no** as each country has a different population. (E.g. A high suicide number is not indicative of a high suicide rate if a country has a high population.)
 
 #### 2. Drop data that are not in the year 2014 and without HDI in the year 2014
 
