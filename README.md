@@ -6,10 +6,9 @@ We believe that this dataset as well as question is relevant to our society toda
 
 Hence, we found the dataset: **Suicide_Rates_Overview** which compiles data on countries' economic wellbeing and their suicide rates. From this, we hope to acheive a better understanding on whether our quest for a high economic wellbeing will affect the suicide rates.
 
-### Dataset link: ttps://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016/input
+Dataset link: ttps://www.kaggle.com/code/chingchunyeh/suicide-rates-overview-1985-to-2016/input
 
-Question: 
-**How does a country's economic well being affect suicide rates among different demographic categories?**
+### Question: How does a country's economic well being affect suicide rates among different demographic categories?
 
 ## 02: Data Preperation and Cleaning
 
@@ -92,7 +91,7 @@ We investigated the Suicide Counts for each of the 5 countries above (Qatar, Sur
 #### Linear Regression of Suicides throughout the years in Singapore
 As we wanted to only look at the Country Singapore as we are from Singapore, we created a new dataframe called Singapore. 
 
-Singapore = suicideData[[
+<br>Singapore = suicideData[[
     'country',
     'year',
     'sex',
@@ -106,25 +105,25 @@ Singapore = suicideData[[
 <br>We also combined Singapore data based on year
 <br> SGyrly = Singapore.groupby('year', as_index=False)['suicides/100k pop'].mean()
 
-<br> We split the dataset into Train(80%) and Test(20%) data
-Train Set : (24, 1) (24, 1)
-Test Set  : (7, 1) (7, 1)
-Intercept of Regression 	: b =  [1247.35383338]
-Coefficients of Regression 	: a =  [[-0.61527502]]
+<br>We split the dataset into Train(80%) and Test(20%) data
+<br>Train Set : (24, 1) (24, 1)
+<br>Test Set  : (7, 1) (7, 1)
+<br>Intercept of Regression 	: b =  [1247.35383338]
+<br>Coefficients of Regression 	: a =  [[-0.61527502]]
 
 #### Linear Regression of Suicides throughout the years in Singapore
 
 - Actual vs Predicted Suicide Rates (Train Data)
-Goodness of Fit of Model 	Train Dataset
-Explained Variance (R^2) 	: 0.8129937560527714
-Mean Squared Error (MSE) 	: 6.210716587845216
-Root Mean Squared Error (RMSE) 	: 2.492130933126351
+<br>Goodness of Fit of Model 	Train Dataset
+<br>Explained Variance (R^2) 	: 0.8129937560527714
+<br>Mean Squared Error (MSE) 	: 6.210716587845216
+<br>Root Mean Squared Error (RMSE) 	: 2.492130933126351
 
 - Actual vs Predicted Suicide Rates (Test Data)
-Goodness of Fit of Model 	Test Dataset
-Explained Variance (R^2) 	: 0.8279740117603024
-Mean Squared Error (MSE) 	: 6.930591439963626
-Root Mean Squared Error (RMSE) 	: 2.632601648552934
+<br>Goodness of Fit of Model 	Test Dataset
+<br>Explained Variance (R^2) 	: 0.8279740117603024
+<br>Mean Squared Error (MSE) 	: 6.930591439963626
+<br>Root Mean Squared Error (RMSE) 	: 2.632601648552934
 
 #### Breakdown for different age groups across the years
 
