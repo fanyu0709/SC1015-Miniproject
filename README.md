@@ -143,7 +143,11 @@ Overall decreasing trend in Suicide rates in Singapore up till the year 2016
 
 #### New Method: Logistic Regression of Data
 
-Purpose: To analyze and model the relationship between various factors and gender in the context of suicide rates, and to understand how well a logistic regression model can predict gender based on these factors.
+Purpose: To analyze and model the relationship between various factors and gender in the context of suicide rates, and to understand how well a logistic regression model can predict gender of those likely to die by suicide
+- Able to provide more targeted support
+- Converts age into string type
+- Uses LabelEncoder & OneHotEncoder
+- Converts gender into numerical values 0 and 1
 
 Accuracy: 77.05%
 
